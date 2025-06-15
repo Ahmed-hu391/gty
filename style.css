@@ -1,0 +1,176 @@
+/* CSS File: got-pa-pizza.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background-image:url('aaa.jpg');
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header .content {
+  position: relative;
+  z-index: 2;
+}
+.sizes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.size-box {
+  background-color: #2a2a2a;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+  text-align: center;
+  width: 60px;
+}
+
+.size {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff0000;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 14px;
+  color: #fff;
+}
+
+
+header h1 {
+  font-size: 68px;
+  color: #ff0000;
+  font-family: 'Almarai', sans-serif;
+  text-shadow: 2px 2px 15px rgba(255, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 24px;
+  margin: 10px 0 25px;
+  color: #fcdede;
+}
+
+.btn {
+  background: #ff0000;
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b30000;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  color: #ff0000;
+  margin-bottom: 40px;
+}
+
+.features,
+.menu,
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #1c1c1c;
+  padding: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25d366;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 46px;
+  }
+  .box {
+    width: 90%;
+  }
+}
